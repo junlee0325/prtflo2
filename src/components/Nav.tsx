@@ -1,7 +1,7 @@
-import React from "react";
+
 import { useScrollSpy } from "../hooks/useScrollSpy";
 
-type Props = {};
+
 
 const links = [
   { id: "Greeting", label: "JKL" },
@@ -11,7 +11,7 @@ const links = [
   { id: "Testimonials", label: "Testimonials" },
 ];
 
-const Nav = (props: Props) => {
+const Nav = () => {
   const active = useScrollSpy();
 
   return (

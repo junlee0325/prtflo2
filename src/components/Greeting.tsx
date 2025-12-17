@@ -1,17 +1,17 @@
-import React from "react";
+
 import { useState } from "react";
 import jun from "../assets/jun.webp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FilePresentIcon from "@mui/icons-material/FilePresent";
-import CheckIcon from "@mui/icons-material/Check";
+
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import Tooltip from "@mui/material/Tooltip";
 import resume from "../assets/Jun Kyung Lee Resume 25.pdf";
 
-type Props = {};
 
-const Greeting = (props: Props) => {
+
+const Greeting = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {

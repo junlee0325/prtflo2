@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import TechCard from "./TechCard";
 
 import html from "../assets/tech/html.webp";

@@ -1,8 +1,6 @@
-import React from "react";
 
-type Props = {};
 
-const Testimonials = (props: Props) => {
+const Testimonials = () => {
   return (
     <div className="flex justify-evenly bg-[#242424] md:text-[1rem] text-xs scroll-mt-[40vh]" id="Testimonials">
       <div className="bg-[#f3f3f3] w-1/3 rounded-r-3xl md:px-6 md:py-16 px-2 py-6 flex flex-col justify-center gap-4">

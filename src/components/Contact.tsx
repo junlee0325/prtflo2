@@ -1,9 +1,8 @@
-import React from "react";
+
 import down from "../assets/down.png";
 
-type Props = {};
 
-const Contact = (props: Props) => {
+const Contact = () => {
   return (
     <div className="flex flex-nowrap">
       <div className="bg-[#242424] w-2/3 rounded-tl-3xl rounded-br-3xl md:p-16 p-6 text-white quicksand md:text-base text-sm">

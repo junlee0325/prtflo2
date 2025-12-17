@@ -1,8 +1,6 @@
-import React from 'react'
 
-type Props = {}
 
-const Summary = (props: Props) => {
+const Summary = () => {
   return (
     <div className='bg-[#242424] w-full md:py-16 py-10 flex flex-col items-center justify-around gap-10 rounded-bl-3xl rounded-tr-3xl scroll-mt-[30vh]' id="Summary">
         <div className='w-[70%] flex flex-col gap-4'>

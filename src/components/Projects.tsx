@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useState, useEffect } from "react";
 import hwatuTarot from "../assets/screenshots/hwatuTarot.webp";
 import fridgeRaider from "../assets/screenshots/fridgeRaider.webp";
@@ -9,7 +9,7 @@ import aac from "../assets/screenshots/aac.webp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
-type Props = {};
+
 
 type Project = {
   title: string;
@@ -20,7 +20,7 @@ type Project = {
   techUsed: string[];
 };
 
-const Projects = (props: Props) => {
+const Projects = () => {
   const projects: Project[] = [
     {
       title: "brilly",
@@ -92,7 +92,6 @@ const Projects = (props: Props) => {
   const [focused, setFocused] = useState<Project>(projects[0]);
   const [hovered, setHovered] = useState<string | null>(null);
   const [imgHover, setImgHover] = useState(false);
-  const [imgLoaded, setImgLoaded] = useState(false);
 
     useEffect(() => {
     projects.forEach((project) => {
@@ -101,9 +100,6 @@ const Projects = (props: Props) => {
     });
   }, []);
 
-  useEffect(() => {
-    setImgLoaded(false);
-  }, [focused]);
 
   return (
     <div
