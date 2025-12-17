@@ -63,6 +63,7 @@ const TechContainer: React.FC<TechContainerProps> = () => {
             key={i}
             logo={logo}
             label={label}
+            index={i}
           />
         ))}
       </div>

@@ -46,14 +46,14 @@ const Greeting = () => {
         </div>
       </div>
       <div className="h-full w-3/5 flex flex-col justify-center items-center gap-4 bg-[#f3f3f3] rounded-l-3xl">
-        <img src={jun} className="aspect-1/1 rounded-2xl md:max-w-[40%] max-w-[50%]"></img>
+        <img src={jun} className="aspect-1/1 rounded-2xl md:max-w-[40%] max-w-[50%] fade-in"></img>
         <hr className="text-black w-[100px]" />
-        <p className="quicksand md:text-[2em] text-md">Jun Kyung Lee</p>
-        <p className="quicksand md:text-[1.2em] text-xs px-10 text-center">
+        <p className="quicksand md:text-[2em] text-md fade-in">Jun Kyung Lee</p>
+        <p className="quicksand md:text-[1.2em] text-xs px-10 text-center fade-in">
           React | JavaScript | TypeScript | Tailwind | Figma | UI/UX | AWS
           Certified Cloud Practitioner
         </p>
-        <div className="quicksand md:text-[1rem] text-xs flex gap-2 items-center">
+        <div className="quicksand md:text-[1rem] text-xs flex gap-2 items-center fade-in">
           <p>junkyung9503@gmail.com</p>
           <Tooltip title={copied ? "Copied!" : "Click to copy"} arrow>
             <div
@@ -64,7 +64,7 @@ const Greeting = () => {
             </div>
           </Tooltip>
         </div>
-        <div className="flex flex-row gap-6 md:text-[3em] text-2xl">
+        <div className="flex flex-row gap-6 md:text-[3em] text-2xl fade-in">
           <a
             href="https://www.linkedin.com/in/iam-junkyunglee/"
             target="_blank"

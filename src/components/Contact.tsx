@@ -18,7 +18,7 @@ const Contact = () => {
             <hr className="w-[100px]" />
           </div>
           <div className="flex flex-col gap-4">
-            <p className="major-mono-display-regular text-base text-xs">
+            <p className="major-mono-display-regular md:text-base text-xs">
               Let's build something together.
             </p>
             <hr className="w-[100px]" />
@@ -26,7 +26,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="w-1/3 flex flex-col justify-center items-center gap-4">
-         <div className="flex flex-col gap-4">
+         <div className="flex flex-col items-end gap-4">
             <p className="quicksand md:text-[1.2rem] text-xs">
               Contact Info Below
             </p>

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import hwatuTarot from "../assets/screenshots/hwatuTarot.webp";
 import fridgeRaider from "../assets/screenshots/fridgeRaider.webp";
@@ -8,8 +7,6 @@ import brilly from "../assets/screenshots/brilly.webp";
 import aac from "../assets/screenshots/aac.webp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-
-
 
 type Project = {
   title: string;
@@ -93,13 +90,12 @@ const Projects = () => {
   const [hovered, setHovered] = useState<string | null>(null);
   const [imgHover, setImgHover] = useState(false);
 
-    useEffect(() => {
+  useEffect(() => {
     projects.forEach((project) => {
       const img = new Image();
       img.src = project.screenshot;
     });
   }, []);
-
 
   return (
     <div
@@ -108,26 +104,31 @@ const Projects = () => {
     >
       <div className="h-full w-2/3 md:px-6 md:py-16 px-2 py-10 flex flex-col gap-10 justify-center bg-[#f3f3f3] rounded-r-3xl">
         <div className="flex flex-col gap-4 ">
-            <div className="relative md:h-[300px]">
-                <a
-                href={`${focused.projectUrl}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`absolute w-full h-full cursor-pointer flex justify-center items-center hover:bg-[#ffffff70] text-[50px]`}
-                onClick={(e) => e.stopPropagation()}
-                onMouseEnter={() => setImgHover(true)}
-                onMouseLeave={() => setImgHover(false)}
-              >
-                {imgHover && <OpenInNewIcon fontSize="inherit" className="hover:opacity-50"/>}
-              </a>
-                <img
-            src={focused.screenshot}
-            loading="eager"
-            decoding="async"
-            className="w-full h-full rounded-lg object-cover object-top"
-          />
-            </div>
-          
+          <div className="relative md:h-[300px]">
+            <a
+              href={`${focused.projectUrl}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`absolute w-full h-full cursor-pointer flex justify-center items-center hover:bg-[#ffffff70] text-[50px]`}
+              onClick={(e) => e.stopPropagation()}
+              onMouseEnter={() => setImgHover(true)}
+              onMouseLeave={() => setImgHover(false)}
+            >
+              {imgHover && (
+                <OpenInNewIcon
+                  fontSize="inherit"
+                  className="hover:opacity-50"
+                />
+              )}
+            </a>
+            <img
+              src={focused.screenshot}
+              loading="eager"
+              decoding="async"
+              className="w-full h-full rounded-lg object-cover object-top"
+            />
+          </div>
+
           <div className="flex flex-col gap-4">
             <p className="major-mono-display-regular md:text-[1.5em] text-sm">
               {focused.title}
@@ -138,9 +139,9 @@ const Projects = () => {
             <div className="flex flex-wrap justify-end quicksand md:text-[1rem] text-xs">
               {focused.techUsed.map((x, i) => {
                 if (i === focused.techUsed.length - 1) {
-                  return <span className="">{x}</span>;
+                  return <span key={i} className="">{x}</span>;
                 } else {
-                  return <span className="flex flex-nowrap mr-1">{x} |</span>;
+                  return <span key={i} className="flex flex-nowrap mr-1">{x} |</span>;
                 }
               })}
             </div>
@@ -188,11 +189,14 @@ const Projects = () => {
       </div>
       <div className="bg-[#242424] w-1/3 flex flex-col justify-start items-end gap-6 md:p-6 md:py-0 p-2 py-6">
         <div className="flex flex-col items-end gap-4 text-white pb-4">
-          <p className="major-mono-display-regular md:text-[1.5rem] text-md">Projects</p>
+          <p className="major-mono-display-regular md:text-[1.5rem] text-md">
+            Projects
+          </p>
           <hr className=" w-[100px]" />
         </div>
-        {projects.map((x) => (
+        {projects.map((x,i) => (
           <div
+            key={i}
             className={`gabriela-regular w-full 
                flex flex-col ${
                  x.title === focused.title ? "items-start" : "items-end"
