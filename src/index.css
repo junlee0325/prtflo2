@@ -30,10 +30,10 @@ html {
 @keyframes bounce-custom {
   0%,
   100% {
-    transform: translateY(-4px);
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(4px);
+    transform: translateY(6px);
   }
 }
 

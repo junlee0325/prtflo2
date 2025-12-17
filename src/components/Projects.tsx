@@ -129,13 +129,13 @@ const Projects = () => {
             />
           </div>
 
-          <div className="flex flex-col gap-4 animate-bouncy">
+          <div className="flex flex-col gap-4 ">
             <p className="major-mono-display-regular md:text-[1.5em] text-sm ">
               {focused.title}
             </p>
             <hr className=" w-[100px]" />
           </div>
-          <div className="text-right flex flex-col items-end gap-4 animate-bouncy">
+          <div className="text-right flex flex-col items-end gap-4 ">
             <div className="flex flex-wrap justify-end quicksand md:text-[1rem] text-xs">
               {focused.techUsed.map((x, i) => {
                 if (i === focused.techUsed.length - 1) {
@@ -147,7 +147,7 @@ const Projects = () => {
             </div>
             <hr className=" w-[100px]" />
           </div>
-          <div className="flex flex-col gap-4 animate-bouncy">
+          <div className="flex flex-col gap-4 ">
             <p className="quicksand md:text-sm text-xs">{focused.dsc}</p>
             <hr className=" w-[100px]" />
           </div>
@@ -187,8 +187,8 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#242424] w-1/3 flex flex-col justify-start items-end gap-6 md:p-6 md:py-0 p-2 py-6">
-        <div className="flex flex-col items-end gap-4 text-white pb-4">
+      <div className="bg-[#242424] w-1/3 flex flex-col justify-start items-end gap-6 md:px-6 md:py-12 px-2 py-10">
+        <div className="flex flex-col items-end gap-4 text-white pb-6">
           <p className="major-mono-display-regular md:text-[1.5rem] text-md">
             Projects
           </p>
