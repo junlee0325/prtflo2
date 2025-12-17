@@ -104,7 +104,7 @@ const Projects = () => {
     >
       <div className="h-full w-2/3 md:px-6 md:py-16 px-2 py-10 flex flex-col gap-10 justify-center bg-[#f3f3f3] rounded-r-3xl">
         <div className="flex flex-col gap-4 ">
-          <div className="relative md:h-[300px]">
+          <div className="relative md:h-[300px] animate-bouncy">
             <a
               href={`${focused.projectUrl}`}
               target="_blank"
@@ -129,13 +129,13 @@ const Projects = () => {
             />
           </div>
 
-          <div className="flex flex-col gap-4">
-            <p className="major-mono-display-regular md:text-[1.5em] text-sm">
+          <div className="flex flex-col gap-4 animate-bouncy">
+            <p className="major-mono-display-regular md:text-[1.5em] text-sm ">
               {focused.title}
             </p>
             <hr className=" w-[100px]" />
           </div>
-          <div className="text-right flex flex-col items-end gap-4">
+          <div className="text-right flex flex-col items-end gap-4 animate-bouncy">
             <div className="flex flex-wrap justify-end quicksand md:text-[1rem] text-xs">
               {focused.techUsed.map((x, i) => {
                 if (i === focused.techUsed.length - 1) {
@@ -147,12 +147,12 @@ const Projects = () => {
             </div>
             <hr className=" w-[100px]" />
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 animate-bouncy">
             <p className="quicksand md:text-sm text-xs">{focused.dsc}</p>
             <hr className=" w-[100px]" />
           </div>
           <div className="flex flex-col items-end gap-4">
-            <div className="flex items-end gap-2 gabriela-regular md:text-sm text-xs">
+            <div className="flex items-end gap-2 gabriela-regular md:text-sm text-xs ">
               <a
                 href={`${focused.projectUrl}`}
                 target="_blank"

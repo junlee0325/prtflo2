@@ -16,7 +16,7 @@ const Nav = () => {
 
   return (
     <div
-      className="md:w-1/17 fixed hidden top-0 left-0 h-full md:flex flex-row flex-nowrap justify-start items-end gap-10 px-8 major-mono-display-regular"
+      className="md:w-1/17 fixed hidden top-0 left-0 h-full md:flex flex-row flex-nowrap justify-start items-end gap-10 px-8 major-mono-display-regular fade-in"
       style={{ writingMode: "sideways-rl" }}
     >
       {links.map(({ id, label }) => (

@@ -30,15 +30,15 @@ html {
 @keyframes bounce-custom {
   0%,
   100% {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
   }
   50% {
-    transform: translateY(5px);
+    transform: translateY(4px);
   }
 }
 
 .animate-bouncy {
-  animation: bounce-custom 2s ease-in-out infinite;
+  animation: bounce-custom 2.5s ease-in-out infinite;
 }
 
 @keyframes custom-opacity {

@@ -34,7 +34,7 @@ const Greeting = () => {
             ? "Good Afternoon"
             : "Good Evening"}
           </p>
-          <hr className="text-white w-[100px]" />
+          <hr className="text-white w-[100px] opacity-0 fade-in" />
         </div>
         <div className="text-right flex flex-col items-end gap-4">
           <p className="gabriela-regular text-white md:text-[2em] text-sm w-full opacity-0 fade2">
@@ -42,12 +42,12 @@ const Greeting = () => {
             <br />
             front-end developer
           </p>
-          <hr className="text-white w-[100px]" />
+          <hr className="text-white w-[100px] opacity-0 fade-in" />
         </div>
       </div>
       <div className="h-full w-3/5 flex flex-col justify-center items-center gap-4 bg-[#f3f3f3] rounded-l-3xl">
         <img src={jun} className="aspect-1/1 rounded-2xl md:max-w-[40%] max-w-[50%] fade-in"></img>
-        <hr className="text-black w-[100px]" />
+        <hr className="text-black w-[100px] fade-in" />
         <p className="quicksand md:text-[2em] text-md fade-in">Jun Kyung Lee</p>
         <p className="quicksand md:text-[1.2em] text-xs px-10 text-center fade-in">
           React | JavaScript | TypeScript | Tailwind | Figma | UI/UX | AWS
